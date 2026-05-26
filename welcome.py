@@ -9,7 +9,7 @@ from discord import app_commands
 from typing import Optional
 from datetime import datetime
 
-from utils.embeds import EmbedBuilder
+from embeds import EmbedBuilder
 
 class WelcomeCog(commands.Cog):
     """Cog pour les messages de bienvenue et de départ"""

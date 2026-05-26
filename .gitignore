@@ -1,0 +1,9 @@
+.env
+*.pyc
+__pycache__/
+*.log
+venv/
+*.db
+data/
+logs/
+Screen/

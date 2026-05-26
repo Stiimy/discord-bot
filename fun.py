@@ -11,7 +11,7 @@ from datetime import datetime
 import random
 import asyncio
 
-from utils.embeds import EmbedBuilder
+from embeds import EmbedBuilder
 
 class FunCog(commands.Cog):
     """Cog pour les commandes amusantes"""

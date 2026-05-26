@@ -10,7 +10,7 @@ from typing import Optional, Union
 from datetime import datetime
 import asyncio
 
-from utils.embeds import EmbedBuilder
+from embeds import EmbedBuilder
 
 class UtilitiesCog(commands.Cog):
     """Cog pour les commandes utilitaires"""
@@ -402,50 +402,39 @@ class UtilitiesCog(commands.Cog):
         
         await interaction.response.send_message(embed=embed)
     
-    @app_commands.command(name="ping", description="Affiche la latence du bot")
+    @app_commands.command(name="ping", description="🏓 Affiche la latence du bot (avec humour)")
     async def ping(self, interaction: discord.Interaction):
-        """Commande pour afficher la latence du bot"""
-        
-        # Mesure du temps de réponse
-        start_time = datetime.utcnow()
-        
-        embed = discord.Embed(
-            title="🏓 Pong !",
-            description="Calcul de la latence...",
-            color=0x7289da
-        )
-        
-        await interaction.response.send_message(embed=embed)
-        
-        # Calcul de la latence
-        end_time = datetime.utcnow()
-        response_time = (end_time - start_time).total_seconds() * 1000
-        
-        # Mise à jour de l'embed
-        embed.description = None
-        embed.add_field(
-            name="📡 Latence WebSocket",
-            value=f"{round(self.bot.latency * 1000)}ms",
-            inline=True
-        )
-        
-        embed.add_field(
-            name="⏱️ Temps de réponse",
-            value=f"{round(response_time)}ms",
-            inline=True
-        )
-        
-        # Couleur selon la latence
-        avg_latency = (self.bot.latency * 1000 + response_time) / 2
-        if avg_latency < 100:
-            embed.color = 0x00ff00  # Vert
-        elif avg_latency < 200:
-            embed.color = 0xffff00  # Jaune
+        start = datetime.utcnow()
+        await interaction.response.send_message("🏓 ...")
+        end = datetime.utcnow()
+        ws = round(self.bot.latency * 1000)
+        http = round((end - start).total_seconds() * 1000)
+        avg = (ws + http) / 2
+
+        # Messages LoL selon la latence
+        if avg < 50:
+            msg = "⚡ 0 ms en draft ? T'es sur le serveur Riot ou quoi ?"
+            color = 0x00ff00
+        elif avg < 100:
+            msg = "🟢 Ping correct. T'as le temps de flash un Lee Sin avant qu'il ward."
+            color = 0x2ecc71
+        elif avg < 200:
+            msg = "🟡 100-200ms, le ping d'un ADC qui se fait dive sans flash."
+            color = 0xf1c40f
+        elif avg < 400:
+            msg = "🟠 200-400ms, t'as le ping d'un Yasuo 0/10 qui flame sa team."
+            color = 0xe67e22
+        elif avg < 800:
+            msg = "🔴 +400ms, bro t'es en Guinée ? Même Karthus R met moins de temps."
+            color = 0xe74c3c
         else:
-            embed.color = 0xff0000  # Rouge
-        
-        embed.timestamp = datetime.utcnow()
-        
+            msg = "💀 +800ms. T'as le ping d'un serveur brésilien en plein carnaval. /ff."
+            color = 0x992d22
+
+        embed = discord.Embed(title="🏓 Ping !", description=msg, color=color, timestamp=datetime.utcnow())
+        embed.add_field(name="📡 WebSocket", value=f"{ws}ms", inline=True)
+        embed.add_field(name="⏱️ HTTP", value=f"{http}ms", inline=True)
+        embed.set_footer(text=f"Sylphiette • Game is Game")
         await interaction.edit_original_response(embed=embed)
     
     @app_commands.command(name="embed", description="Crée un message embed personnalisé")

@@ -10,7 +10,7 @@ from datetime import datetime, timedelta
 from typing import Optional, List, Dict
 import random
 
-from utils.embeds import EmbedBuilder
+from embeds import EmbedBuilder
 
 class EconomyCog(commands.Cog):
     """Cog pour le système d'économie"""

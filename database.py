@@ -9,7 +9,7 @@ from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession, async_sess
 from sqlalchemy.orm import declarative_base
 from sqlalchemy import select, update, delete, and_
 
-from .models import Base, Guild, User, Level, Economy, Moderation
+from models import Base, Guild, User, Level, Economy, Moderation
 
 logger = logging.getLogger(__name__)
 

@@ -9,7 +9,7 @@ from discord import app_commands
 from datetime import datetime, timedelta
 from typing import Optional
 
-from utils.embeds import EmbedBuilder
+from embeds import EmbedBuilder
 
 class ModerationCog(commands.Cog):
     """Cog pour les commandes de modération"""

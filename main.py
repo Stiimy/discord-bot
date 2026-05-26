@@ -14,8 +14,8 @@ from discord.ext import commands
 from dotenv import load_dotenv
 
 from database import Database
-from utils.config import Config
-from utils.logger import setup_logger
+from config import Config
+from logger import setup_logger
 
 # Chargement des variables d'environnement
 load_dotenv()
@@ -64,13 +64,23 @@ class SmiityBot(commands.Bot):
     async def load_cogs(self):
         """Chargement de tous les modules (cogs)"""
         cogs = [
-            'cogs.config',
-            'cogs.moderation',
-            'cogs.levels',
-            'cogs.economy',
-            'cogs.welcome',
-            'cogs.utilities',
-            'cogs.fun'
+            'panel',
+            'draftbot_cmds',
+            'draftbot_full',
+            'music',
+            'automod',
+            'reaction_roles',
+            'giveaways',
+            'logs',
+            'tickets',
+            'voice_temp',
+            'extras',
+            'moderation',
+            'levels',
+            'economy',
+            'welcome',
+            'utilities',
+            'fun'
         ]
         
         for cog in cogs:

@@ -11,7 +11,7 @@ from typing import Optional, List, Dict
 import asyncio
 import random
 
-from utils.embeds import EmbedBuilder
+from embeds import EmbedBuilder
 
 class LevelsCog(commands.Cog):
     """Cog pour le système de niveaux et XP"""
