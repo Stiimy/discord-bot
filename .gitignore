@@ -7,3 +7,8 @@ venv/
 data/
 logs/
 Screen/
+music.py
+giveaways.py
+tickets.py
+voice_temp.py
+reaction_roles.py

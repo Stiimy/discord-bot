@@ -65,8 +65,8 @@ class SmiityBot(commands.Bot):
         """Chargement de tous les modules (cogs)"""
         cogs = [
             'panel',
-            '_cmds',
-            '_full',
+            'extra_cmds',
+            'more_cmds',
             'music',
             'automod',
             'reaction_roles',

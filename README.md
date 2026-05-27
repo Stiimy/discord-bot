@@ -38,7 +38,7 @@ python3 main.py
 | 📜 Logs | ✅ Dispo |
 | 🎮 Fun & Jeux | ✅ Dispo |
 | 🔧 Utilitaires | ✅ Dispo |
-| 🎵 Musique | ✅ Dispo |
+| 🎵 Musique | 🚧 In progress |
 | 🎯 Rôles-Réactions | 🚧 In progress |
 | 🎉 Giveaways | 🚧 In progress |
 | 🎟️ Tickets | 🚧 In progress |
