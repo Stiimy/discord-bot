@@ -4,16 +4,16 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/commandes-71%2B-blueviolet?style=flat-square" alt="Commands">
-  <img src="https://img.shields.io/badge/modules-16-blue?style=flat-square" alt="Modules">
-  <img src="https://img.shields.io/badge/prix-gratuit%20fr%C3%A8re-brightgreen?style=flat-square" alt="Free">
-  <img src="https://img.shields.io/badge/auto--h%C3%A9berg%C3%A9-oui-red?style=flat-square" alt="Self-hosted">
-  <img src="https://img.shields.io/badge/Python-3.14-yellow?style=flat-square&logo=python" alt="Python">
+  <img src="https://img.shields.io/badge/commandes-55%2B-blueviolet?style=flat-square">
+  <img src="https://img.shields.io/badge/modules-16-blue?style=flat-square">
+  <img src="https://img.shields.io/badge/prix-gratuit%20fr%C3%A8re-brightgreen?style=flat-square">
+  <img src="https://img.shields.io/badge/auto--h%C3%A9berg%C3%A9-oui-red?style=flat-square">
+  <img src="https://img.shields.io/badge/Python-3.14-yellow?style=flat-square&logo=python">
 </p>
 
 ---
 
-> ⚠️ **Ce bot est auto-hébergé.** Y'a pas d'invite link, pas de token public, pas d'infos privées dans ce repo. Tu le prends, tu le host chez toi. Nangalafou.
+> ⚠️ **Ce bot est auto-hébergé.** Y'a pas d'invite link, pas de token public, pas d'infos privées. Tu le prends, tu le host chez toi. Nangalafou.
 
 ## 🚀 Quickstart
 
@@ -26,15 +26,30 @@ cp .env.example .env  # mets ton token Discord dedans
 python3 main.py
 ```
 
-## 📦 Ce qu'il fait
+## 📦 Fonctionnalités
 
-🛡️ Mod • ⭐ Niveaux • 💰 Éco • 👋 Welcome • 📜 Logs • 🎉 Giveaways • 🎟️ Tickets • 🎵 Musique • 🎮 Fun • ⚙️ /config 
-
-**71 commandes slash, tout gratuit, tout chez toi.**
+| Module | Status |
+|---|---|
+| 🛡️ Modération | ✅ Dispo |
+| ⭐ Niveaux & XP | ✅ Dispo |
+| 💰 Économie | ✅ Dispo |
+| 👋 Bienvenue | ✅ Dispo |
+| ⚙️ /config | ✅ Dispo |
+| 📜 Logs | ✅ Dispo |
+| 🎮 Fun & Jeux | ✅ Dispo |
+| 🔧 Utilitaires | ✅ Dispo |
+| 🎵 Musique | ✅ Dispo |
+| 🎯 Rôles-Réactions | 🚧 In progress |
+| 🎉 Giveaways | 🚧 In progress |
+| 🎟️ Tickets | 🚧 In progress |
+| 🎤 Salons vocaux | 🚧 In progress |
+| 🛡️ Auto-mod | 🚧 In progress |
+| 🔗 Réseaux sociaux | 🚧 In progress |
+| 📊 Statistiques | 🚧 In progress |
 
 ## 🆓 Gratuit. Vraiment.
 
-Pas d'abonnement. Pas de "passe premium pour débloquer". Pas de "crédite ma carte". Juste un bot qui taff.
+Pas d'abonnement. Pas de features cachées derrière un paywall. Juste un bot qui taff.
 
 ---
 
