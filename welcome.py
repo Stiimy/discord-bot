@@ -1,6 +1,6 @@
 """
 Module de bienvenue pour Smiity Bot
-Messages de bienvenue personnalisés comme MEE6
+Messages de bienvenue personnalisés
 """
 
 import discord

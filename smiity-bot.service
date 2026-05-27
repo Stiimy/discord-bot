@@ -1,0 +1,14 @@
+[Unit]
+Description=Smiity Discord Bot
+After=network.target
+
+[Service]
+Type=simple
+User=stiimy
+WorkingDirectory=/home/stiimy/discord-bot
+ExecStart=/home/stiimy/discord-bot/venv/bin/python3 /home/stiimy/discord-bot/main.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

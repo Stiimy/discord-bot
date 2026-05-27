@@ -1,6 +1,6 @@
 """
 Module Tickets — Système de support par ticket
-Style DraftBot : /ticket open, /ticket close, transcript
+Style  : /ticket open, /ticket close, transcript
 """
 
 import discord, asyncio

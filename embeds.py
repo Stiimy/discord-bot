@@ -55,7 +55,7 @@ class EmbedBuilder:
     
     @staticmethod
     def config(guild_name: str, config_data: Dict[str, Any]) -> discord.Embed:
-        """Crée un embed de configuration comme DraftBot"""
+        """Crée un embed de configuration
         embed = discord.Embed(
             title=f"⚙️ Configuration de Smiity Bot",
             description=f"Configuration pour **{guild_name}**",

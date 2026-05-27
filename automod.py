@@ -1,7 +1,7 @@
 """
 Module Auto-Modération — Protection anti-spam, anti-lien, anti-raid, anti-mass mention
-Style DraftBot — toute la config est gratuite
-Inspiré de : draftbot.fr/docs/modules/auto-moderation
+Style  toute la config est gratuite
+
 """
 
 import discord, re, asyncio

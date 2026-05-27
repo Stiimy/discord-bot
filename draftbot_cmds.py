@@ -1,5 +1,5 @@
 """
-Commandes DraftBot manquantes — tout gratuit
+Commandes  manquantes — tout gratuit
 /sondage, /suggestion, /clear, /lock, /unlock, /setnick, /role, /report
 """
 
@@ -8,7 +8,7 @@ from discord.ext import commands
 from discord import app_commands
 
 
-class DraftBotExtras(commands.Cog):
+class Extras(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
@@ -117,4 +117,4 @@ class DraftBotExtras(commands.Cog):
 
 
 async def setup(bot):
-    await bot.add_cog(DraftBotExtras(bot))
+    await bot.add_cog(Extras(bot))

@@ -1,6 +1,6 @@
 """
 Module de niveaux pour Smiity Bot
-Système XP et niveaux comme MEE6
+Système XP et niveaux
 """
 
 import discord

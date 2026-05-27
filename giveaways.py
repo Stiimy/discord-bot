@@ -1,7 +1,7 @@
 """
 Module Giveaways — Concours et tirages au sort
-Style DraftBot : /giveaway start, /giveaway reroll, /giveaway end
-Inspiré de : draftbot.fr/docs/modules/giveaways
+Style  : /giveaway start, /giveaway reroll, /giveaway end
+
 """
 
 import discord, asyncio, random

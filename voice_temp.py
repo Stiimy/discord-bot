@@ -1,6 +1,6 @@
 """
 Module Salons Vocaux Temporaires — Salons éphémères
-Style DraftBot
+Style 
 """
 
 import discord

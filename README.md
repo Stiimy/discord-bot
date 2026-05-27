@@ -28,7 +28,7 @@ python3 main.py
 
 ## 📦 Ce qu'il fait
 
-🛡️ Mod • ⭐ Niveaux • 💰 Éco • 👋 Welcome • 📜 Logs • 🎉 Giveaways • 🎟️ Tickets • 🎵 Musique • 🎮 Fun • ⚙️ /config (DraftBot style)
+🛡️ Mod • ⭐ Niveaux • 💰 Éco • 👋 Welcome • 📜 Logs • 🎉 Giveaways • 🎟️ Tickets • 🎵 Musique • 🎮 Fun • ⚙️ /config 
 
 **71 commandes slash, tout gratuit, tout chez toi.**
 

@@ -145,7 +145,7 @@ class Database:
     
     def _calculate_level(self, xp: int) -> int:
         """Calcule le niveau basé sur l'XP"""
-        # Formule similaire à MEE6: niveau = racine(xp/100)
+        # Formule similaire à : niveau = racine(xp/100)
         import math
         return int(math.sqrt(xp / 100))
     

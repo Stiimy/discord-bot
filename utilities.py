@@ -1,6 +1,6 @@
 """
 Module utilitaires pour Smiity Bot
-Commandes utilitaires diverses comme MEE6
+Commandes utilitaires diverses
 """
 
 import discord
@@ -41,7 +41,7 @@ class UtilitiesCog(commands.Cog):
         """Retourne l'aide générale"""
         embed = discord.Embed(
             title="🤖 Aide de Smiity Bot",
-            description="Smiity Bot est un bot multifonctionnel combinant les fonctionnalités de MEE6 et DraftBot.",
+            description="Smiity Bot est un bot multifonctionnel combinant les fonctionnalités de  et .",
             color=0x7289da,
             timestamp=datetime.utcnow()
         )

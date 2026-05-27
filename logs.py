@@ -1,7 +1,7 @@
 """
 Module Logs — Journalisation complète du serveur
-Style DraftBot : messages, joins, sanctions, vocaux
-Inspiré de : draftbot.fr/docs/modules/logs
+Style  : messages, joins, sanctions, vocaux
+
 """
 
 import discord

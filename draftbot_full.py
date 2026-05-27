@@ -1,5 +1,5 @@
 """
-Commandes DraftBot manquantes — batch 2
+Commandes  manquantes — batch 2
 /infractions, /sanctions, /mod, /normaliser, /botinfo, /embed avancé,
 /reglement, /suggestmod, /anniversaire, /evenement, /sauvegarde, /couleur, /maths
 """
@@ -10,7 +10,7 @@ from discord import app_commands
 from datetime import datetime
 
 
-class DraftBotFull(commands.Cog):
+class Full(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
@@ -175,7 +175,7 @@ class DraftBotFull(commands.Cog):
 
 
 async def setup(bot):
-    await bot.add_cog(DraftBotFull(bot))
+    await bot.add_cog(Full(bot))
 
     # ========== ENVOYER ==========
     @app_commands.command(name="envoyer", description="📨 Envoie un message dans un salon (via le bot)")
@@ -184,4 +184,4 @@ async def setup(bot):
         await salon.send(message)
         await interaction.response.send_message(f"✅ Message envoyé dans {salon.mention}", ephemeral=True)
 async def setup(bot):
-    await bot.add_cog(DraftBotFull(bot))
+    await bot.add_cog(Full(bot))

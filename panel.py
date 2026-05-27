@@ -1,5 +1,5 @@
 """
-/config — DraftBot-style panel, navigation centralisée, tous les boutons actifs
+/config — -style panel, navigation centralisée, tous les boutons actifs
 Thème violet sombre #301934
 """
 
@@ -165,7 +165,7 @@ class LinkBtn(discord.ui.Button):
 
 
 class ChannelPick(discord.ui.ChannelSelect):
-    """Sélecteur de salon — comme DraftBot"""
+    """Sélecteur de salon —
     def __init__(self, placeholder, row=None):
         super().__init__(placeholder=placeholder, min_values=0, max_values=1, row=row)
 
@@ -255,7 +255,7 @@ class ConfigPanel(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @app_commands.command(name="config", description="👻 Panneau de configuration (DraftBot style)")
+    @app_commands.command(name="config", description="👻 Panneau de configuration ( style)")
     @app_commands.default_permissions(administrator=True)
     async def config(self, interaction: discord.Interaction):
         e, v = nav("home")

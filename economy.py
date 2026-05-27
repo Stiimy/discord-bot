@@ -1,6 +1,6 @@
 """
 Module d'économie pour Smiity Bot
-Système d'économie avec coins, daily, boutique comme DraftBot
+Système d'économie avec coins, daily, boutique
 """
 
 import discord

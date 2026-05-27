@@ -1,7 +1,7 @@
 """
 Module Rôles-Réactions — Auto-rôle via réaction Discord
-Style DraftBot : /reactionrole add <message_id> <emoji> <role>
-Inspiré de : draftbot.fr/docs/modules/roles-reactions
+Style  : /reactionrole add <message_id> <emoji> <role>
+
 """
 
 import discord

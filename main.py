@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Smiity Bot - Clone de MEE6 et DraftBot combiné
+Smiity Bot - Bot Discord multifonctionnel
 Bot Discord multifonctionnel avec commandes SLASH en anglais et réponses en français
 """
 
@@ -65,8 +65,8 @@ class SmiityBot(commands.Bot):
         """Chargement de tous les modules (cogs)"""
         cogs = [
             'panel',
-            'draftbot_cmds',
-            'draftbot_full',
+            '_cmds',
+            '_full',
             'music',
             'automod',
             'reaction_roles',
